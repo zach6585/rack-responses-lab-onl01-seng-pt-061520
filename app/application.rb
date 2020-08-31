@@ -6,7 +6,6 @@ class Application
       resp.write "Good Morning!" 
     else 
       if 
-      resp.write "#{Time.now.to_s[12...]}"
       # resp.write "Good Afternoon!"
     end 
     resp.finish
