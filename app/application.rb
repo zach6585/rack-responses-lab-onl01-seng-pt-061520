@@ -4,8 +4,8 @@ class Application
     resp = Rack::Response.new
     if Time.now.to_s[13] == ':'
       resp.write "Good Morning!" 
-    else Time.now.to_s[12...13]
-      if 
+     Time.now.to_s[12...13]
+    
       # resp.write "Good Afternoon!"
     end 
     resp.finish
