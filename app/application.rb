@@ -5,8 +5,7 @@ class Application
     if Time.now.to_s[13] == ':' || Time.now.to_s[12...14].to_i < 12 
       resp.write "Good Morning!"
     else 
-     if 
-      # resp.write "Good Afternoon!"
+      resp.write "Good Afternoon!"
     end 
     resp.finish
   end
