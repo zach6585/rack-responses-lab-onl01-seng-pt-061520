@@ -7,7 +7,7 @@ class Application
       resp.write "Good Morning!" 
     else 
       resp.write "#{Time.now.to_i}"
-      resp.write "Good Afternoon!"
+      # resp.write "Good Afternoon!"
     end 
     resp.finish
   end
