@@ -4,7 +4,7 @@ class Application
     resp = Rack::Response.new
     if Time.now.to_s[13] == ':' || Time.now.to_s[12...14].to_i < 12 
       resp.write "Good Morning!"
-    else 
+    elsif Time.now.to_s[12...14].to_i >= 12 
       resp.write "Good Afternoon!"
     end 
     resp.finish
