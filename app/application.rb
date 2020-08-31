@@ -9,7 +9,9 @@ class Application
       resp.write "#{Time.now.to_s[12...14].to_i < 12}"
       resp.write "Good Morning!"
     elsif Time.now.to_s[12...14].to_i >= 12 
+      resp.write "#{Time.now.to_s[12...14].to_i >= 12}"
       resp.write "Good Afternoon!"
+      
     end 
     resp.finish
   end
